@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Linking CSS style sheet in the XML file.  -->
+<?xml-stylesheet type="text/css" href="catalog_19031553.css"?>
+
+<!--This is the external subset of DTD linked in this XML file.-->
+<!DOCTYPE TreasureStore SYSTEM "catalog_19031553.dtd">
+
+<!--root tag containing the details of store info and songs -->
+<TreasureStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	           xsi:noNamespaceSchemaLocation="catalog_19031553.xsd"> <!--Linking XSD file in the XML file.  --> 
+	<!--This StoreInfo element contains the details about the Treasure Music Store.-->
+    <StoreInfo>
+        <logo photo="image" />
+        <store_name> TREASURE MUSIC STORE </store_name>
+        <theme language="English"> Music is life itself! </theme>
+        <address> ADDRESS: Gwarko,Lalitpur </address>
+        <phone_number type="cellphone"> PHONE: 977-9849495234 </phone_number>
+        <phone_number type="landline"> LANDLINE: 01-5200048 </phone_number>
+        <website> OUR WEBSITE: https://treasuremusicstore.com/ </website>  
+    </StoreInfo>
+
+    <!--This Songs element contains the details about the Music element.-->
+    <Songs>
+        <Music ID="MS01">
+        	<!--This MusicInfo element contains the details about the music having ID="MS01".-->
+            <MusicInfo>
+                <music_name> Your Power </music_name>
+                <artist nationality="American"> Artist: Billie Eilish </artist>
+                <album> Album: Happier Than Ever </album>
+                <director> Director: Billie Eilish </director>
+                <producer> Producer(s): Finneas O'Connell </producer>
+                <writer> Songwriter(s): Billie Eilish and Finneas O'Connell </writer>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 29 April 2021 </released>
+                <length> Length: 4:22 </length>
+                <genre> Genre: Folk </genre>
+                <label> Label: Darkroom, Interscope</label>
+            </MusicInfo>
+        </Music>
+
+        <Music ID="MS02">
+        	<!--This MusicInfo element contains the details about the music having ID="MS02".-->
+            <MusicInfo>
+                <music_name> I Can't Breathe </music_name>
+                <artist nationality="American"> Artish: H.E.R </artist>
+                <director> Director: Shane Adams </director>
+                <producer> Producer(s):  Dernst "D'Mile" Emile II </producer>
+                <writer> Songwriter(s): Dernst "D'Mile " Emile II, H.E.R, Tiara Thomas </writer>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 19 June 2020 </released>
+                <length> Length: 4:47 </length>
+                <!--Using escape sequence &#38; to represent ampersand(&) symbol.-->
+                <genre> Genre: R&#38;B </genre>
+                <label> Label: RCA </label>
+                <rank> Rank: #20 on Billboard's Hot R&#38;B Songs </rank>
+                <awards> Awards Name: Grammy Award for Song of the Year, MTV Europe Music Awards for Video for Good </awards>
+            </MusicInfo>
+        </Music>
+
+        <Music ID="MS03">
+        	<!--This MusicInfo element contains the details about the music having ID="MS03".-->
+            <MusicInfo>
+                <music_name> You belong with me </music_name>
+                <artist nationality="American"> Artish: Taylor Swift </artist>
+                <album> Album: Fearless </album>
+                <producer> Producer(s): Nathan Chapman, Taylor Swift </producer>
+                <writer> Songwriter(s): Liz Rose, Taylor Swift </writer>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 18 April 2009 </released>
+                <length> Length: 3:52 </length>
+                <genre> Genre: Country Pop </genre>
+                <label> Label: Big Machine </label>
+                <rank> Rank: #11 on US Billboard Hot 100(2009) </rank>
+                <awards> Awards Name: The 2010 Grammy Awards, Record of the Year, Best Female Pop Vocal Performance </awards>
+            </MusicInfo>
+        </Music>
+
+
+        <Music ID="MS04">
+        	<!--This MusicInfo element contains the details about the music having ID="MS04".-->
+            <MusicInfo>
+                <music_name> Send Me an Angel </music_name>
+                <artist nationality="German"> Artish: Scorpions </artist>
+                <album> Album: Crazy World </album>
+                <producer> Producer(s): Keith Olsen, Scorpions </producer>
+                <writer> Songwriter(s): Rudolf Schenker, Klaus Meine </writer>
+                <recorded> Recorded: 1990 </recorded>
+                <B-side label="two-sided recording"> B-side: "Like a Gun"(original release), "Always"(1989 reissue) </B-side>
+                <studio> Studio: Goodnight LA Studios </studio>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 17 September 1991 </released>
+                <length> Length: 4:32 </length>
+                <genre> Genre: Glam metal </genre>
+                <label> Label: Vertigo, Mercury </label>
+                <rank> Rank: #44 on US Billboard Hot 100(1992) </rank>
+            </MusicInfo>
+        </Music>
+
+        <Music ID="MS05">
+        	<!--This MusicInfo element contains the details about the music having ID="MS05".-->
+            <MusicInfo>
+                <music_name> Halo </music_name>
+                <artist nationality="American"> Artish: Beyonce </artist>
+                <album> Album: I Am... Sasha Fierce </album>
+                <producer> Producer(s): Ryan Tedder, Beyoncé Knowles </producer>
+                <writer> Songwriter(s): Ryan Tedder, Evan Bogart, Beyoncé Knowles </writer>
+                <recorded> Recorded: 2008 </recorded>
+                <studio> Studio: Manfield, Los Angeles Germano and Roc the Mic, New York City </studio>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 20 January 2009 </released>
+                <length> Length: 4:21 </length>
+                <!--Using escape sequence &#38; to represent ampersand(&) symbol.-->
+                <genre> Genre: Pop, R&#38;B </genre>
+                <label> Label: Columbia </label>
+                <rank> Rank: #24 on US Billboard Hot 100(2009) </rank>
+                <awards> Awards Name: The 2010 Grammy Awards for Best Female Pop Vocal Performance</awards>
+            </MusicInfo>
+        </Music>
+
+        <Music ID="MS06">
+        	<!--This MusicInfo element contains the details about the music having ID="MS06".-->
+            <MusicInfo>
+                <music_name> Fast Car </music_name>
+                <artist nationality="American"> Artish: Tracy Chapman </artist>
+                <album> Album: Tracy Chapman </album>
+                <producer> Producer(s): David Kershenbaum </producer>
+                <writer> Songwriter(s): Tracy Chapman </writer>
+                <recorded> Recorded: 1987 </recorded>
+                <B-side label="two-sided recording"> B-side: "For You" </B-side>
+                <released catagories="Single" dateformat="d/m/y"> Released Date: 6 April 1988 </released>
+                <length> Length: 4:57 </length>
+                <genre> Genre: Folk, rock, folk rock </genre>
+                <label> Label: Elektra </label>
+                <rank> Rank: #76 on US Billboard Hot 100(1988) </rank>
+            </MusicInfo>
+        </Music>
+
+    </Songs>
+</TreasureStore>

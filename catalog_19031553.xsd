@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="TreasureStore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="StoreInfo"/>
+        <xs:element ref="Songs"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StoreInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="logo"/>
+        <xs:element ref="store_name"/>
+        <xs:element ref="theme"/>
+        <xs:element ref="address"/>
+        <xs:element ref="phone_number" maxOccurs="unbounded" />
+        <xs:element ref="website"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="logo">
+        <xs:complexType>
+            <xs:attribute name="photo" type="xs:string" use="required"/>
+        </xs:complexType>
+  </xs:element>
+  <xs:element name="store_name" type="xs:string"/>
+  <xs:element name="theme">
+    <xs:complexType mixed="true">
+      <xs:attribute name="language"  type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="address" type="xs:string"/>
+  <xs:element name="phone_number">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="website" type="xs:string"/>
+  <xs:element name="Songs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Music" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Music">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="MusicInfo"/>
+      </xs:sequence>
+      <xs:attribute name="ID" type="xs:NCName" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MusicInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="music_name"/>
+        <xs:element ref="artist"/>
+        <xs:element ref="album" minOccurs="0"/>
+        <xs:element ref="director" minOccurs="0"/>
+        <xs:element ref="producer"/>
+        <xs:element ref="writer"/>
+        <xs:element ref="recorded" minOccurs="0"/>
+        <xs:element ref="B-side" minOccurs="0"/>
+        <xs:element ref="studio" minOccurs="0"/>
+        <xs:element ref="released"/>
+        <xs:element ref="length"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="label"/>
+        <xs:element ref="rank" minOccurs="0"/>
+        <xs:element ref="awards" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="music_name" type="xs:string"/>
+  <xs:element name="artist">
+    <xs:complexType mixed="true">
+      <xs:attribute name="nationality" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="album" type="xs:string"/>
+  <xs:element name="director" type="xs:string"/>
+  <xs:element name="producer" type="xs:string"/>
+  <xs:element name="writer" type="xs:string"/>
+  <xs:element name="recorded" type="xs:string"/>
+  <xs:element name="B-side">
+    <xs:complexType mixed="true">
+      <xs:attribute name="label" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="studio" type="xs:string"/>
+  <xs:element name="released">
+    <xs:complexType mixed="true">
+      <xs:attribute name="catagories" type="xs:string" use="required"/>
+      <xs:attribute name="dateformat" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="length" type="xs:string"/>
+  <xs:element name="genre" type="xs:string"/>
+  <xs:element name="label" type="xs:string"/>
+  <xs:element name="rank" type="xs:string"/>
+  <xs:element name="awards" type="xs:string"/> 
+</xs:schema>

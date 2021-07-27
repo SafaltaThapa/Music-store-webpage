@@ -1,0 +1,51 @@
+<!--The 'TreasureStore' element must contain child elements named as 'StoreInfo' and 'Songs' and the children can also have children.-->
+<!ELEMENT TreasureStore (StoreInfo,Songs)>
+
+<!--The StoreInfo element must contain child elements named as logo, store name, theme, address, phone number(one or more) and website. -->
+<!ELEMENT StoreInfo (logo,store_name,theme,address,phone_number+,website)>
+
+<!--The 'logo' element is empty. -->
+<!ELEMENT logo EMPTY>
+<!--The 'photo' attribute of 'logo' element contains character data and the attribute value is required. -->
+<!ATTLIST logo photo CDATA #REQUIRED>
+
+<!ELEMENT store_name (#PCDATA)>
+<!ELEMENT theme (#PCDATA)>
+<!ATTLIST theme language CDATA #REQUIRED>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ATTLIST phone_number type CDATA #REQUIRED>
+<!ELEMENT website (#PCDATA)>
+
+<!--The child element 'Music' must occur one or more times inside the 'Songs' element.-->
+<!ELEMENT Songs (Music)+>
+
+<!--The child element 'MusicInfo' must occur one or more times inside the 'Music' element.-->
+<!ELEMENT Music (MusicInfo)+>
+<!ATTLIST Music ID CDATA #REQUIRED>
+
+<!--The child elements named as music_name,artist,album,director,producer,writer,released,length,genre,label,rank,awards,recorded,B-side and studio can occur zero or one time inside  MusicInfo element.-->
+<!ELEMENT MusicInfo (music_name,artist,album?,director?,producer,writer,released,length,genre,label,rank?,awards?,recorded?,B-side?,studio?)>
+
+<!ELEMENT music_name (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist nationality CDATA #REQUIRED>
+<!ELEMENT album (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT released (#PCDATA)>
+
+<!--The 'catagories' and 'dateformat' attributes of 'released' element contains character data and the attribute value of catagories and dateformat is required.-->
+<!ATTLIST released catagories CDATA #REQUIRED
+                   dateformat CDATA #REQUIRED>
+
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT rank (#PCDATA)>
+<!ELEMENT awards (#PCDATA)>
+<!ELEMENT recorded (#PCDATA)>
+<!ELEMENT B-side (#PCDATA)>
+<!ATTLIST B-side label CDATA #REQUIRED>
+<!ELEMENT studio (#PCDATA)>

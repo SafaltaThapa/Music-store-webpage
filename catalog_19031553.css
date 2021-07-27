@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+TreasureStore {
+    padding: 1.2rem 2rem;
+	background-color: #222831;
+	color: #e0e0e0;
+	font-family: 'Roboto', sans-serif;
+}
+
+StoreInfo {
+    padding: 1rem;
+	font-family: 'Lobster', cursive;
+	max-width: 100vw;
+	display: block;
+	margin: 1rem auto;
+	box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.8), inset 0 8px 16px rgba(0, 0, 0, 0.4);
+	border-radius: 7px;
+	transition: all 0.6s;
+	color: #fefecc;
+}
+
+logo {
+	background-image: url('https://images-platform.99static.com//zg0kJuQFhRE0pCBjrX1Xd2-5DDM=/0x0:960x960/fit-in/500x500/99designs-contests-attachments/117/117219/attachment_117219521');
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	background-position: center center;
+    float: left;
+}
+
+store_name,
+address,
+phone_number,
+website,
+logo,
+theme {
+	display: block;
+	max-width: 600px;
+	margin: 1rem auto;
+	text-align: center;
+    font-family: 'Roboto Mono',monospace;
+}
+
+address,
+phone_number {
+    display: list-item;
+    list-style: square;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+website {
+    color: rgb(21, 151, 187);
+    font-family: 'Girassol',cursive;
+    
+}
+
+store_name {
+	font-size: 2.2rem;
+    font-family: 'Itim',cursive;
+    color: #e1701a;
+}
+
+Songs {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 3rem;
+	padding: 1rem 0;
+}
+
+MusicInfo *{
+    display: block;
+}
+
+Music {
+	border: 1px solid green;
+	border-radius: 7px;
+	padding: 1rem;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+MusicInfo *{
+	display: block;
+	margin-bottom: 0.5rem;
+    max-width: 50%;
+}
+
+music_name {
+	
+	font-weight: bold;
+	font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+Music[ID='MS01']::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    background-image: url('https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F04%2Fbillie-eilish-happier-than-ever-release-date-cover-tracklist-merch-info-000.jpg?w=960&cbr=1&q=90&fit=max');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+Music[ID='MS02']::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: red;
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a0/H.E.R._-_I_Can%27t_Breathe.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+Music[ID='MS03']::before {
+	position: absolute;
+	content: '';
+ 
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: red;
+	background-image: url('https://i1.sndcdn.com/artworks-000378884601-e2hvzr-t500x500.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+Music[ID='MS04']::before {
+	position: absolute;
+    
+	content: '';
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: red;
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/8/80/Crazy_World_Tour_2017-18_Scorpions_Tour.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+Music[ID='MS05']::before {
+		position: absolute;
+		content: '';
+		top: 0;
+       
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background-color: red;
+		background-image: url('https://images-na.ssl-images-amazon.com/images/I/71yaz8ZJbAL._SL1500_.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+}
+
+Music[ID='MS06']::before {
+	position: absolute;
+	content: '';
+	top: 0;
+
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: red;
+	background-image: url('https://www.mixonline.com/wp-content/uploads/2019/11/tracy_chapman_fast_carjpg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media (max-width: 768px) {
+	StoreInfo {
+		max-width: calc(100% - 4rem);
+	}
+	Music {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
